@@ -1,0 +1,42 @@
+{
+    "name": "SimplePad",
+    "version" : "0.0.0.1",
+    "description" : "A simple NotePad for your browser.",
+    "permissions" : [
+      "webRequest",  "tabs", "storage"
+    ],
+  
+    "background" : {
+      "service_worker" : "background.js"
+    },
+  
+    "action": {
+     "default_popup": "popup.html"
+    },
+  
+    "content_scripts": [{
+      "matches": ["http://*/*"],
+       "css": [
+          "assets/css/fontawesome.min.css",
+          "assets/css/regular.min.css",
+          "assets/suneditor/src/assets/css/suneditor.css"
+       ]
+    }],
+  
+    "web_accessible_resources": [{
+      "resources": [
+        "assets/css/fontawesome.min.css",
+        "assets/css/regular.min.css",
+        "assets/webfonts/fa-regular-400.woff2"
+      ],
+      "matches": ["http://*/*"]
+    }],
+  
+    
+    "content_security_policy": {
+      "script-src": "'self' https://maxcdn.bootstrapcdn.com; object-src 'self';",
+      "script-src": "'self' https://use.fontawesome.com; object-src 'self'",
+      "script-src": "'self' https://fonts.googleapis.com; object-src 'self'"
+    },
+    "manifest_version": 3
+  }

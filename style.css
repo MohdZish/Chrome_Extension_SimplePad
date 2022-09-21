@@ -1,0 +1,64 @@
+
+body{
+    width: 800px;
+    height: 600px;
+    overflow-y:hidden;
+
+  }
+  
+.headertext{
+font-size: 20px;
+}
+
+#editor {
+  box-sizing: border-box; /* fit parent width */
+  height: 100%;
+  width: 100%;
+}
+
+.font0{
+  font-family: Raleway;
+  font-weight: 700;
+
+}
+
+.font1{
+  font-family: Roboto;
+  color: #4f4f4f;
+  font-weight: 400;
+}
+
+.font2{
+  font-family: Raleway;
+  font-size: 13px;
+}
+
+.font3{
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 16px !important;
+}
+
+#noteTitle{
+  border: 0px;
+  text-align: center;
+  outline: none; 
+  background-color: transparent;
+}
+
+.sidebar{
+  background-color: rgba(231, 231, 231, 0.973);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  height:520px;
+}
+
+
+.fileListbtn{
+  text-align: left;
+}
+
+.se-placeholder::placeholder{
+  font-size:20px;
+}
+  
